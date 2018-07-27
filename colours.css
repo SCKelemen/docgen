@@ -1,0 +1,6 @@
+:root {
+  --color-background: #000;
+  --color-primary-text: #fff;
+  --color-dark-text: #000;
+  --color-link-text: rgba(0,0,0,0.5);
+}
