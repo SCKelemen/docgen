@@ -42,7 +42,7 @@ p {
 }
 
 a {
-  color: var(--color-link-text) !important;
+  color: var(--color-link-text);
   font-size: 1em;
   font-weight: 400;
   padding: 0 0 0 1em;
@@ -87,7 +87,7 @@ i {
 }
 
 .tag {
-  color: var(--color-primary-text) !important;
+  color: var(--color-primary-text);
   background: var(--color-background);
   font-size: 1em;
   font-weight: 400;
