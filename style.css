@@ -1,7 +1,8 @@
 @import "colours.css" screen;
 
 body {
-  padding: 30px;
+  padding: 32pt;
+  padding-top: 64pt;
   margin: 0;
   font-family: 'Open Sans', sans-serif;
 }
@@ -94,4 +95,93 @@ i {
   padding: 0.25em 0.5em 0.25em 0.5em;
   display: inline-block;
   cursor: pointer;
+}
+
+.topBar {
+  background: var(--color-background);
+  height: 32pt;
+  width: 100vw;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 0;
+  display: flex;
+}
+
+.topBar > * {
+  align-self: center;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+}
+
+.leftContent {
+  padding-left: 32pt;
+}
+
+.rightContent {
+  padding-right: 32pt;
+  margin-left: auto;
+  color: var(--color-primary-text);
+}
+
+.rightContent > * {
+  margin-left: 0.15em;
+  margin-right: 0.15em;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logo {
+  height: 22pt;
+  background: red;
+  width: auto;
+  color: white;
+  margin: auto;
+}
+
+.logoText {
+  color: white;
+}
+
+.searchField {
+  height: 100%;
+  background: rgba(255,255,255,0.15);
+  border: none;
+  color: white;
+  font-size: 1em;
+  font-weight: 400;
+  width: 40vw;
+  padding: 0.5em;
+  margin: 0 auto;
+}
+
+.nav-img {
+  border-radius: 1000px;
+  width: auto;
+  height: 22pt;
+  vertical-align: middle;
+}
+
+.badge:after {
+  display: inline-block;
+  background-color: red;
+  border-radius: 1000px;
+  content: attr(data-bubble);
+  width: .5em;
+  height: .5em;
+  margin-left: -.4em;
+  margin-top: -.4em;
+  color: white;
+}
+
+.rightContent > .material-icons {
+  height: 32pt;
+  display: inline-flex;
+  vertical-align: middle;
 }
